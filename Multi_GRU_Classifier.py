@@ -1,14 +1,14 @@
 
 
 import numpy as np
+np.random.seed(0)
+
 import pandas as pd
 from keras.layers import Dense, Dropout, GRU
 from keras.models import Sequential
 from keras import regularizers
 from matplotlib import pyplot
 
-
-np.random.seed(0)
 
 #Loading the data
 dataset_X_Train = pd.read_csv('xValTrain.csv', header=None)
